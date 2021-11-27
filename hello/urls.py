@@ -1,7 +1,12 @@
-from .views import first
+from . import views
+#from .views import first
 from django.urls import path
 
 urlpatterns = [
-    path('', first, name='first'),
+    path('', views.first, name='first')
+    
+
+
+    
 
 ]
